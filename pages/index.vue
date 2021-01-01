@@ -145,8 +145,12 @@
             },
 
             reloadForm() {
+                var freshCategories = [];
+                for (var i = 0; i < this.categories.length; i++) {
+                    freshCategories.push({ name: this.categories[i].name, img: null, url: null });
+                }
+                this.categories = freshCategories;
                 this.results = false;
-                this.categories.length = 0;
             }
         },
 

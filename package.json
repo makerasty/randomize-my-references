@@ -1,6 +1,6 @@
 {
   "name": "randomize-my-references",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Handy tool for artists to generate a selection of random reference images.",
   "scripts": {
     "dev": "nuxt",
@@ -9,7 +9,7 @@
     "start": "nuxt start"
   },
   "author": "Bartosz 'maker' Rzeźnicki",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@nuxt/http": "^0.6.2",
     "@nuxtjs/tailwindcss": "^3.4.2",
