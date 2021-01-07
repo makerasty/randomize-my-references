@@ -41,7 +41,7 @@
                         </div>
                         <div v-else class="flex flex-col justify-center content-center h-full">
                             <div v-if="cat.img" class="text-center h-full">
-                                <a :href="cat.url" target="_blank"><img :src="cat.img" :alt="cat.name" class="object-cover rounded w-full h-full" loading="lazy" /></a>
+                                <a :href="cat.url" target="_blank" rel="noopener"><img :src="cat.img" :alt="cat.name" class="object-cover rounded w-full h-full" loading="lazy" /></a>
                             </div>
                             <div v-else class="text-center">
                                 <svg width="48" height="48" class="mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -67,7 +67,7 @@
                 </div>
                 <div v-else class="flex flex-col md:flex-row flex-wrap justify-center content-center transition motion-reduce:transition-none bg-white dark:bg-gray-700 dark:text-white rounded-md" style="box-shadow: rgba(0,0,0,0.01) 0px 1px 0px, rgba(0,0,0,0.025) 0px 0px 8px, rgba(0,0,0,0.075) 0px 20px 30px;">
                     <div class="flex-1 text-center p-6" style="line-height: 48px;">
-                        Images are provided by <a href="https://pixabay.com" target="_blank"><img v-if="darkMode" src="~/assets/pixabay_light.png" alt="pixabay" class="inline transition motion-reduce:transition-none" loading="lazy" /><img v-else src="~/assets/pixabay_dark.png" alt="pixabay" class="inline transition motion-reduce:transition-none" loading="lazy" /></a>, click on them for full sized ones. You can <a href="#" @click="reloadForm">reload form</a> if you want to go for another spin.
+                        Images are provided by <a href="https://pixabay.com" target="_blank" rel="noopener"><img v-if="darkMode" src="~/assets/pixabay_light.png" alt="pixabay" class="inline transition motion-reduce:transition-none" loading="lazy" /><img v-else src="~/assets/pixabay_dark.png" alt="pixabay" class="inline transition motion-reduce:transition-none" loading="lazy" /></a>, click on them for full sized ones. You can <a href="#" @click="reloadForm">reload form</a> if you want to go for another spin.
                     </div>
                 </div>
             </div>
@@ -82,8 +82,8 @@
                 </div>
                 <div class="w-full col-span-full xl:col-span-4">
                     <blockquote class="bubble">
-                        <p class="mb-4">If you wish to improve your drawing skill, remember to check out other reference generators like <a href="http://reference.sketchdaily.net/en" target="_blank">SketchDaily</a> which allows you to make quicker or longer studies, <a href="https://x6ud.github.io/#/" target="_blank">Animal Photo Reference</a> where you can find the animal faces based on skull positions or <a href="https://coolors.co/generate" target="_blank">Coolors</a> - the most amazing tool for creating color palettes.</p>
-                        <p>Besides, it's really handy to create super-duper-inspirational boards on Pinterest, especially when you run out of ideas! You can check few of mines, like <a href="https://pl.pinterest.com/eljonek/pallettes/" target="_blank">Color Palettes</a> or <a href="https://pl.pinterest.com/eljonek/portrait-references/" target="_blank">Portrait References</a>.</p>
+                        <p class="mb-4">If you wish to improve your drawing skill, remember to check out other reference generators like <a href="http://reference.sketchdaily.net/en" target="_blank" rel="noopener">SketchDaily</a> which allows you to make quicker or longer studies, <a href="https://x6ud.github.io/#/" target="_blank" rel="noopener">Animal Photo Reference</a> where you can find the animal faces based on skull positions or <a href="https://coolors.co/generate" target="_blank" rel="noopener">Coolors</a> - the most amazing tool for creating color palettes.</p>
+                        <p>Besides, it's really handy to create super-duper-inspirational boards on Pinterest, especially when you run out of ideas! You can check few of mines, like <a href="https://pl.pinterest.com/eljonek/pallettes/" target="_blank" rel="noopener">Color Palettes</a> or <a href="https://pl.pinterest.com/eljonek/portrait-references/" target="_blank" rel="noopener">Portrait References</a>.</p>
                         <img src="~/assets/eljonek.png" class="person" alt="person" loading="lazy" />
                         <cite class="absolute xl:hidden block text-lg not-italic" style="font-family: 'Inter', sans-serif; left: 6rem; bottom: -2.5rem;">Eljonek</cite>
                     </blockquote>
@@ -105,6 +105,7 @@
         head() {
             return {
                 htmlAttrs: {
+                    lang: 'en',
                     class: this.darkMode ? 'dark' : 'light'
                 }
             }

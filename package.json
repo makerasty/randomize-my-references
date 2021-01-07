@@ -1,6 +1,6 @@
 {
   "name": "randomize-my-references",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Handy tool for artists to generate a selection of random reference images.",
   "scripts": {
     "dev": "nuxt",
