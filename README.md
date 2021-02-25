@@ -1,5 +1,5 @@
 # randomize my references
-[![](https://img.shields.io/website?down_color=lightgrey&down_message=offline&up_color=green&up_message=online&url=https%3A%2F%2Frefs.rzeznicki.me)](https://refs.eljonek.art) ![](https://img.shields.io/github/package-json/v/makerasty/randomize-my-references) ![](https://img.shields.io/github/license/makerasty/randomize-my-references)
+[![](https://img.shields.io/website?down_color=lightgrey&down_message=offline&up_color=green&up_message=online&url=https%3A%2F%2Frefs.rzeznicki.me)](https://refs.rzeznicki.me) ![](https://img.shields.io/github/package-json/v/makerasty/randomize-my-references) ![](https://img.shields.io/github/license/makerasty/randomize-my-references)
 
 Vue ([Nuxt.js](https://github.com/nuxt/nuxt.js "Nuxt.js")) powered website to generate selection of random reference images for artists. [Eljonek](https://eljonek.art) came up with the idea of this project therefore it is hosted on her domain. Images are pulled from Pixabay by free API.
 
